@@ -1,0 +1,2 @@
+header{display:flex;justify-content:space-between}.login-form{grid-gap:5px;display:grid;gap:5px;justify-items:center;button,input{width:200px}}.create-form{grid-gap:5px;margin-bottom:50px;max-width:100px}.create-form,.thead{display:grid;gap:5px}.thead{grid-gap:5px;font-weight:700;grid-template-columns:repeat(8,180px)}.tbody{grid-gap:10px;display:grid;gap:10px}.tbody form{grid-gap:5px;display:grid;gap:5px;grid-template-columns:repeat(8,180px) auto 1fr}.tbody form div{display:flex}
+/*# sourceMappingURL=main.574af6fa.css.map*/
