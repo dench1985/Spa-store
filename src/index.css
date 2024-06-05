@@ -1,0 +1,41 @@
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-form{
+    display: grid;
+    gap: 5px;
+    justify-items: center;
+
+input, button{
+    width: 200px;
+}
+}
+.create-form{
+    display: grid;
+    max-width: 100px;
+    gap: 5px;
+
+    margin-bottom: 50px;
+}
+.thead{
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(8,180px);
+    gap: 5px;
+}
+.tbody{
+    display: grid;
+    gap: 10px;
+}
+.tbody form{
+    display: grid;
+         grid-template-columns: repeat(8, 180px) auto 1fr;
+         gap: 5px;
+}
+.tbody form div{
+    display: flex;
+}
