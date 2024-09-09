@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Spa-store/static/css/main.574af6fa.css",
-    "main.js": "/Spa-store/static/js/main.5bee897a.js",
+    "main.js": "/Spa-store/static/js/main.36da8894.js",
     "index.html": "/Spa-store/index.html",
     "main.574af6fa.css.map": "/Spa-store/static/css/main.574af6fa.css.map",
-    "main.5bee897a.js.map": "/Spa-store/static/js/main.5bee897a.js.map"
+    "main.36da8894.js.map": "/Spa-store/static/js/main.36da8894.js.map"
   },
   "entrypoints": [
     "static/css/main.574af6fa.css",
-    "static/js/main.5bee897a.js"
+    "static/js/main.36da8894.js"
   ]
 }
