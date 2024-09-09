@@ -64,7 +64,8 @@ function TableComponent({ data, setData }) {
 
     async function addnew(event) {
         event.preventDefault();
-
+           console.log( event.target.reportValidity());
+            
         const companySignatureName = event.target.companySignatureName.value;
         const documentName = event.target.documentName.value;
         const documentStatus = event.target.documentStatus.value;
@@ -122,7 +123,7 @@ function TableComponent({ data, setData }) {
         )
 
             .then(x => x.json())
-        console.log(data);
+       
 
     }
 
@@ -138,23 +139,28 @@ function TableComponent({ data, setData }) {
 
                         </div>
                         <div>
-                            <TextField label="companySignatureName" variant="outlined" name="companySignatureName" defaultValue={item.companySignatureName} />
+                            <TextField label="companySignatureName" variant="outlined" name="companySignatureName" defaultValue={item.companySignatureName}
+                            />
 
                         </div>
                         <div>
-                            <TextField label="documentName" variant="outlined" name="documentName" defaultValue={item.documentName} />
+                            <TextField label="documentName" variant="outlined" name="documentName" defaultValue={item.documentName} 
+                            />
 
                         </div>
                         <div>
-                            <TextField label="documentStatus" variant="outlined" name="documentStatus" defaultValue={item.documentStatus} />
+                            <TextField label="documentStatus" variant="outlined" name="documentStatus" defaultValue={item.documentStatus} 
+                            />
 
                         </div>
                         <div>
-                            <TextField label="documentType" variant="outlined" name="documentType" defaultValue={item.documentType} />
+                            <TextField label="documentType" variant="outlined" name="documentType" defaultValue={item.documentType} 
+                            />
 
                         </div>
                         <div>
-                            <TextField label="employeeNumber" variant="outlined" name="employeeNumber" defaultValue={item.employeeNumber} />
+                            <TextField label="employeeNumber" variant="outlined" name="employeeNumber" defaultValue={item.employeeNumber} 
+                            />
 
                         </div>
                         <div>
@@ -163,7 +169,8 @@ function TableComponent({ data, setData }) {
 
                         </div>
                         <div>
-                            <TextField label="employeeSignatureName" variant="outlined" name="employeeSigDate" defaultValue={item.employeeSignatureName} />
+                            <TextField label="employeeSignatureName" variant="outlined" name="employeeSignatureName" defaultValue={item.employeeSignatureName}
+                            />
 
                         </div>
                         <div>
@@ -177,7 +184,7 @@ function TableComponent({ data, setData }) {
                             </Button>
                         </div>
                         <div>
-                            <Button variant="contained">Updete</Button>
+                            <Button variant="contained" type="submit">Updete</Button>
                         </div>
                     </form>
                 ))}
@@ -185,29 +192,36 @@ function TableComponent({ data, setData }) {
                 <form onSubmit={addnew}>
 
                     <div>
-                        <TextField label="companySigDate" variant="outlined" disabled name="companySigDate" />
+                        <TextField label="companySigDate" variant="outlined" disabled name="companySigDate"
+                         />
                     </div>
                     <div>
 
-                        <TextField label="companySignatureName" variant="outlined" name="companySignatureName" />
+                        <TextField label="companySignatureName" variant="outlined" name="companySignatureName" 
+                         required/>
                     </div>
                     <div>
-                        <TextField label="documentName" variant="outlined" name="documentName" />
+                        <TextField label="documentName" variant="outlined" name="documentName" 
+                         required/>
                     </div>
                     <div>
-                        <TextField label="documentStatus" variant="outlined" name="documentStatus" />
+                        <TextField label="documentStatus" variant="outlined" name="documentStatus"
+                         required />
                     </div>
                     <div>
-                        <TextField label="documentType" variant="outlined" name="documentType" />
+                        <TextField label="documentType" variant="outlined" name="documentType"
+                         required />
                     </div>
                     <div>
-                        <TextField label="employeeNumber" variant="outlined" name="employeeNumber" />
+                        <TextField label="employeeNumber" variant="outlined" name="employeeNumber"
+                         required />
                     </div>
                     <div>
                         <TextField label="employeeSigDate" variant="outlined" name="employeeSigDate" disabled />
                     </div>
                     <div>
-                        <TextField label="employeeSignatureName" variant="outlined" name="employeeSignatureName" />
+                        <TextField label="employeeSignatureName" variant="outlined" name="employeeSignatureName"
+                         required />
                     </div>
                     <div>
 
